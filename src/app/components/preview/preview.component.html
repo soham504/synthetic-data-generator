@@ -1,1 +1,40 @@
-<p>preview works!</p>
+
+
+<!--<div class="justify-center items-center previewtable">-->
+<!--    <p-table-->
+<!--        [value]="products"-->
+<!--        styleClass="p-datatable-striped"-->
+<!--        [tableStyle]="{'min-width': '50rem'}">-->
+<!--        <ng-template pTemplate="header">-->
+<!--            <tr>-->
+<!--                <th>Code</th>-->
+<!--                <th>Name</th>-->
+<!--                <th>Category</th>-->
+<!--                <th>Quantity</th>-->
+<!--            </tr>-->
+<!--        </ng-template>-->
+<!--        <ng-template pTemplate="body" let-product>-->
+<!--            <tr>-->
+<!--                <td>{{product.code}}</td>-->
+<!--                <td>{{product.name}}</td>-->
+<!--                <td>{{product.category}}</td>-->
+<!--                <td>{{product.quantity}}</td>-->
+<!--            </tr>-->
+<!--        </ng-template>-->
+<!--    </p-table>-->
+<!--</div>-->
+
+<div class="justify-center align-center textinput">
+    <textarea
+        rows="5"
+        cols="30"
+        pInputTextarea
+        [(ngModel)]="value">
+    </textarea>
+</div>
+
+<div class="card flex justify-content-center">
+    <p-button icon="pi pi-check" />
+    <p-button label="Submit" icon="pi pi-check" />
+    <p-button label="Submit" icon="pi pi-check" iconPos="right" />
+</div>
