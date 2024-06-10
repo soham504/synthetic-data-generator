@@ -23,7 +23,6 @@ export class NavbarComponent {
                 label: 'Home',
                 url : 'http://localhost:4200/',
                 icon : 'pi pi-home',
-
             },
             {
                 label : 'Data Generator',
