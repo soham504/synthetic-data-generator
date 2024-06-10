@@ -1,5 +1,6 @@
 @import "primeng/resources/themes/bootstrap4-dark-purple/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
 
 .p-menubar {
@@ -7,7 +8,7 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #18181b;
     margin-left: 15px;
     margin-right: 15px
 }
