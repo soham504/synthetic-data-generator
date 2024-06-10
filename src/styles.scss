@@ -2,6 +2,14 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
+.homeclass {
+    height : 100vh;
+    display: flex;
+    flex-direction : column;
+    gap : 5rem;
+    margin-top : 15vh;
+}
+
 .upload {
     margin-left: 5vh;
     margin-right : 5vh;
@@ -13,8 +21,6 @@
         margin-right: 5vh;
     }
 }
-
-
 
 .p-menubar {
     background: #18181b;

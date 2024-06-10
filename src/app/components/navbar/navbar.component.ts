@@ -26,7 +26,7 @@ export class NavbarComponent {
             },
             {
                 label : 'Data Generator',
-                url : 'http://localhost:4200/datagenerator/previewdata',
+                url : 'data-generator',
                 icon : 'pi pi-microchip-ai'
             },
             {
@@ -35,12 +35,12 @@ export class NavbarComponent {
                 items : [
                     {
                         label : 'Numeric',
-                        url : 'http://localhost:4200/dataanalysis/numeric',
+                        url : 'data-analysis/numeric',
                         icon : 'pi pi-table',
                     },
                     {
                         label : 'Non Numeric',
-                        url : 'http://localhost:4200/dataanalysis/nonnumeric',
+                        url : 'data-analysis/non-numeric',
                         icon : 'pi pi-chart-bar',
                     }
                 ]
