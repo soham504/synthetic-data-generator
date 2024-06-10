@@ -21,7 +21,7 @@ export class NavbarComponent {
         this.items = [
             {
                 label: 'Home',
-                url : 'http://localhost:4200/',
+                url : '',
                 icon : 'pi pi-home',
             },
             {
