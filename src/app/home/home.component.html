@@ -1,11 +1,26 @@
 <div class="homeclass">
-    <div class="column gap-1 mt-15 align-center">
+    <div class="column gap-1  align-center">
         <h1 class="mb-15">Instructions</h1>
-        <p class="instructions">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum."</p>
+        <p class="instructions">
+            Welcome to the Synthetic Data Generator! Please upload a CSV file with the following columns:
+            <strong>field_name</strong> (name of the field),
+            <strong>data_type</strong> (e.g., integer, float, string),
+            <strong>max_value</strong> (maximum value for numeric types),
+            <strong>min_value</strong> (minimum value for numeric types), and
+            <strong>probabilistic_distribution</strong> (e.g., normal, uniform).
+            Example:
+        </p>
+        <pre class="instructions">
+            field_name,data_type,max_value,min_value,probabilistic_distribution
+            age,integer,100,0,uniform
+            salary,float,200000,30000,normal
+            name,string,,,,
+            start_date,date,,,,
+        </pre>
+        <p class="instructions">
+            Upload the CSV file to start generating synthetic data. Ensure your CSV has no missing headers or typos.
+            If you need help, check the FAQ or contact support.
+        </p>
     </div>
     <!-- Upload button -->
 

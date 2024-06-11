@@ -10,7 +10,6 @@
     gap: 2rem;
     margin-top : 5vh;
     margin-bottom : 5vh;
-
 }
 
 .textinput {
@@ -20,11 +19,10 @@
 }
 
 .homeclass {
-    height : 90vh;
     display: flex;
     flex-direction : column;
     gap : 5rem;
-    margin-top : 15vh;
+    margin-top : 5rem;
 }
 
 hr {
@@ -83,6 +81,7 @@ h4 {
     padding: 0;
     box-sizing: border-box;
     color : #5942a9;
+    text-align : center;
 }
 
 .instructions {
@@ -91,7 +90,8 @@ h4 {
     box-sizing: border-box;
     margin: 0;
     text-align: justify;
-    text-justify: auto;
+    text-justify: inter-word;
+    max-width: 80rem;
 }
 
 html,
