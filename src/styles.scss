@@ -2,8 +2,25 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
+
+.genbutton {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top : 5vh;
+    margin-bottom : 5vh;
+
+}
+
+.textinput {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .homeclass {
-    height : 100vh;
+    height : 90vh;
     display: flex;
     flex-direction : column;
     gap : 5rem;
@@ -19,6 +36,8 @@ hr {
 .upload {
     margin-left: 5vh;
     margin-right : 5vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
@@ -71,6 +90,8 @@ h4 {
     padding-right: 20vh;
     box-sizing: border-box;
     margin: 0;
+    text-align: justify;
+    text-justify: auto;
 }
 
 html,
@@ -154,3 +175,4 @@ app-root {
     pointer-events: none;
     opacity: 0.5;
 }
+

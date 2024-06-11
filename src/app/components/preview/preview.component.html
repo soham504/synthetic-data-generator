@@ -1,6 +1,7 @@
 
 
 <!--<div class="justify-center items-center previewtable">-->
+<!--<h1>Preview Table</h1>-->
 <!--    <p-table-->
 <!--        [value]="products"-->
 <!--        styleClass="p-datatable-striped"-->
@@ -24,15 +25,16 @@
 <!--    </p-table>-->
 <!--</div>-->
 
-<div class="justify-center align-center textinput">
+<div class="justify-center gap-2 align-center textinput">
+    <h1 class="mb-15">Enter Remarks Here</h1>
     <textarea
         rows="5"
-        cols="30"
+        cols="50"
         pInputTextarea
         [(ngModel)]="value">
     </textarea>
 </div>
 
-<div class="card flex justify-content-center">
+<div class="flex genbutton justify-content-center">
     <p-button label="Generate" icon="pi pi-sparkles" />
 </div>
