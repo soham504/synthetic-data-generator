@@ -53,12 +53,13 @@ hr {
     margin-left: 2%;
     margin-right : 2%;
     z-index: 10000;
-    background: #18181b;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px;
+    /* From https://css.glass */
+    background: rgba(13, 13, 13, 0.57);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     border: 1px solid #5942a9;
-
 }
 
 ::-webkit-scrollbar {
@@ -107,6 +108,7 @@ app-root {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 app-root {
