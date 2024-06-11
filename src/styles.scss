@@ -47,13 +47,18 @@ hr {
 }
 
 .p-menubar {
+    position : fixed;
+    width: 96%;
+    left :0;
+    margin-left: 2%;
+    margin-right : 2%;
+    z-index: 10000;
     background: #18181b;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border: 1px solid #5942a9;
-    margin-left: 5vh;
-    margin-right: 5vh;
+
 }
 
 ::-webkit-scrollbar {
