@@ -13,6 +13,7 @@ export const routes: Routes = [
     // },
     // {
     //     path : 'data-generator',
-    //     component : '',
+    //     loadChildren: () =>
+    //          import('./modules/datagenerator').then((m) => m.,
     // }
 ];

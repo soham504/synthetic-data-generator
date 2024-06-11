@@ -1,7 +1,6 @@
-@import "primeng/resources/themes/md-dark-deeppurple/theme.css";
+@import "primeng/resources/themes/lara-dark-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
-
 
 .genbutton {
     display : flex;
@@ -11,6 +10,8 @@
     margin-top : 5vh;
     margin-bottom : 5vh;
 }
+
+
 
 .textinput {
     display: flex;
@@ -28,15 +29,15 @@
 hr {
     margin-left: 5vh;
     margin-right : 5vh;
-    border-color : #bf89c9;
+    border-color : #5da1f5;
 }
 
 .upload {
-    margin-left: 5vh;
-    margin-right : 5vh;
+    margin-left: 2%;
+    margin-right : 2%;
+    max-width : 96%;
     justify-content : center;
     align-items: center;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -46,20 +47,25 @@ hr {
     }
 }
 
+.text-area {
+    max-width : 96%;
+    width : 100%;
+    margin-left : 2%;
+    margin-right : 2%;
+    min-height : 10rem;
+}
 
 .p-menubar {
     position : fixed;
-    width: 96%;
-    left :0;
-    margin-left: 2%;
-    margin-right : 2%;
+    max-width : 80rem;
+    width: 100%;
     z-index: 10000;
-    background: rgba(30, 30, 30, 0.57);
+    background: rgba(31, 41, 55, 0.57);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.5px);
     -webkit-backdrop-filter: blur(2.5px);
-    border: 1px solid #bf89c9;
+    border: 1px solid #5da1f5;
 }
 
 ::-webkit-scrollbar {
@@ -71,13 +77,13 @@ hr {
 }
 
 ::selection {
-    background: #bf89c9;
+    background: #5da1f5;
     color: #f8f8f2;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #bf89c9;
+    background-color: #5da1f5;
 }
 
 h1,
@@ -87,28 +93,36 @@ h4 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color : #bf89c9;
+    color : #5da1f5;
     text-align : center;
 }
 
 .instructions {
-    padding-left: 20vh;
-    padding-right: 20vh;
     box-sizing: border-box;
-    margin: 0;
+    margin-right : 2%;
+    margin-left : 2%;
     text-align: justify;
     text-justify: inter-word;
-    max-width: 80rem;
+    max-width: 96%;
 }
 
 html,
 body,
 app-root {
     height: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    background: #111827;
+    max-width: 80rem;
+
+}
+
+@media screen and (max-width: 600px) {
+    html,body,app-root {
+        overflow-x : hidden;
+    }
 }
 
 app-root {
