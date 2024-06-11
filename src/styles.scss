@@ -46,6 +46,7 @@ hr {
     }
 }
 
+
 .p-menubar {
     position : fixed;
     width: 96%;
@@ -53,7 +54,6 @@ hr {
     margin-left: 2%;
     margin-right : 2%;
     z-index: 10000;
-    /* From https://css.glass */
     background: rgba(30, 30, 30, 0.57);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
