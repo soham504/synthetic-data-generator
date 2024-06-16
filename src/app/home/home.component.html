@@ -16,11 +16,14 @@
             ,probabilistic_distribution
         <p class="instructions">
             Upload the Json file to start generating synthetic data. Ensure your Json has no missing headers or typos.
-            You can also attach additional instructions for the llm in the remarks section.
+            You can also attach additional instructions for the llm in the remarks section. There is also a sample json file available for download.
         </p>
     </div>
-    <!-- Upload button -->
-
+    <!-- sample button -->
+    <div class="genbutton">
+        <p-button label="sample.json" (onClick)="handleClick()" [raised]="true" />
+    </div>
+    <!--upload button-->
     <app-upload-button></app-upload-button>
 </div>
 
