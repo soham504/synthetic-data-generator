@@ -5,13 +5,18 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
-.genbutton {
+.gen {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+.genbutton, p-button {
     display : flex;
     align-items : center;
     justify-content: center;
     gap: 2rem;
-    margin-top : 5vh;
-    margin-bottom : 5vh;
+    margin-bottom: 2rem;
+    margin-top : 2rem;
 }
 
 

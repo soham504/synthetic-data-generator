@@ -1,19 +1,6 @@
 <h1 class="justify-center align-center">Upload Json Here</h1>
 <div class="align-center gap-2 upload mb-15 mt-15">
-    <p-toast />
-    <p-fileUpload
-        name="demo[]"
-        url="https://www.primefaces.org/cdn/api/upload.php"
-        (onUpload)="onUpload($event)"
-        [multiple]="false"
-        accept=".json"
-        maxFileSize="1000000">
-        <ng-template pTemplate="content">
-            <ul *ngIf="uploadedFiles.length">
-                <li *ngFor="let file of uploadedFiles">
-                    {{ file.name }} - {{ file.size }} bytes
-                </li>
-            </ul>
-        </ng-template>
-    </p-fileUpload>
+    <p-fileUpload (onSelect)="onFileSelect($event)" name="file" accept=".json" auto clear></p-fileUpload>
+    <p-button (click)="uploadJSON()">Upload JSON</p-button>
+    <div class="gen" *ngIf="uploadError">{{ uploadError }}</div>
 </div>

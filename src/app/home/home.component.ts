@@ -3,6 +3,7 @@ import {PreviewComponent} from "../components/preview/preview.component";
 import {UploadButtonComponent} from "../components/upload-button/upload-button.component";
 import {Button, ButtonDirective} from "primeng/button";
 import {Ripple} from "primeng/ripple";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -18,10 +19,29 @@ import {Ripple} from "primeng/ripple";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+    jsonData = { // Replace with your actual JSON data
+        name: 'Sample Data',
+        description: 'This is some sample data',
+        items: [
+            { id: 1, value: 'Item 1' },
+            { id: 2, value: 'Item 2' }
+        ]
+    };
+
     constructor() {
     }
 
     handleClick() {
-        console.log('button clicked')
+        const dataString = JSON.stringify(this.jsonData, null, 2); // Stringify with indentation
+        const blob = new Blob([dataString], { type: 'application/json;charset=utf-8' });
+
+        const link = document.createElement('a');
+        link.href = window.URL.createObjectURL(blob);
+        link.download = 'data.json'; // Set desired filename
+        link.click();
+    }
+
+    nextpage() {
+        window.location.href = '/preview';
     }
 }
