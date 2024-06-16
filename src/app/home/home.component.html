@@ -2,7 +2,7 @@
     <div class="column gap-1 mt-15 align-center">
         <h1 class="">Instructions</h1>
         <p class="instructions">
-            Welcome to the Synthetic Data Generator! Please upload a CSV file with the following columns:
+            Welcome to the Synthetic Data Generator! Please upload a Json file with the following columns:
             <strong>field_name</strong> (name of the field),
             <strong>data_type</strong> (e.g., integer, float, string),
             <strong>max_value</strong> (maximum value for numeric types),
@@ -15,7 +15,7 @@
             ,min_value
             ,probabilistic_distribution
         <p class="instructions">
-            Upload the CSV file to start generating synthetic data. Ensure your CSV has no missing headers or typos.
+            Upload the Json file to start generating synthetic data. Ensure your Json has no missing headers or typos.
             You can also attach additional instructions for the llm in the remarks section.
         </p>
     </div>
@@ -23,6 +23,4 @@
 
     <app-upload-button></app-upload-button>
 </div>
-<div>
-    <app-preview></app-preview>
-</div>
+

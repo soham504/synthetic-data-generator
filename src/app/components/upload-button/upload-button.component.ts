@@ -23,6 +23,8 @@ export class UploadButtonComponent {
     constructor(private messageService: MessageService) {
     }
 
+
+
     onUpload(event: FileUploadEvent) {
         for (let file of event.files) {
             this.uploadedFiles.push(file);
