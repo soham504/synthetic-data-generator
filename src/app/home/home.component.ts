@@ -19,7 +19,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-    jsonData = { // Replace with your actual JSON data
+    jsonData = {
         name: 'Sample Data',
         description: 'This is some sample data',
         items: [
@@ -32,16 +32,16 @@ export class HomeComponent {
     }
 
     handleClick() {
-        const dataString = JSON.stringify(this.jsonData, null, 2); // Stringify with indentation
+        const dataString = JSON.stringify(this.jsonData, null, 2);
         const blob = new Blob([dataString], { type: 'application/json;charset=utf-8' });
 
         const link = document.createElement('a');
         link.href = window.URL.createObjectURL(blob);
-        link.download = 'data.json'; // Set desired filename
+        link.download = 'Sample_data.json';
         link.click();
     }
 
-    nextpage() {
+    nextPage() {
         window.location.href = '/preview';
     }
 }
